@@ -25,6 +25,11 @@ public class NmsInstance {
 		// hasBlockCount >= 1.14
 
 		switch (SERVER_VERSION) {
+		case "v1_16_R1":
+			NmsInstance.instance = new net.imprex.orebfuscator.nms.v1_16_R1.NmsManager(config);
+			ChunkCapabilities.hasBlockCount();
+			break;
+
 		case "v1_15_R1":
 			NmsInstance.instance = new net.imprex.orebfuscator.nms.v1_15_R1.NmsManager(config);
 			ChunkCapabilities.hasBlockCount();
